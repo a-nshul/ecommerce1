@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Payment detail</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">OrderIdid</span>
+            <input type="text" placeholder="Enter your OrderId " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Amount</span>
+            <input type="text" placeholder="Enter Amount" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Provider</span>
+            <input type="text" placeholder="Enter Provider" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Status</span>
+            <input type="text" placeholder="Enter your Status " required>
+          </div>
+          <div class="input-box">
+            <span class="details">CreatedAt</span>
+            <input type="time" placeholder="Enter the Time" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ModifiedAt</span>
+            <input type="time" placeholder="Enter the Time" required>
+          </div>
+        </div>
+        <div class="button">
+          <input id="clickable" type="submit" value="Add Payment">
+        </div>
+      </form>
+    </div>
+  </div>
+<script>
+const clickable=document.getElementById("clickable")
+clickable.addEventListener("click",function(e){
+document.body.innerHTML="<h1>Successfully added</h1>"
+});
+</script>
+</body>
+</html>
